@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92090465802",
+    "project_id": "flutter-connect-1bbce",
+    "storage_bucket": "flutter-connect-1bbce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92090465802:android:9d87599d952c13b27aa9f3",
+        "android_client_info": {
+          "package_name": "com.example.authentication_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92090465802-fccu0inp66lj35jmrj1itabb4lhv96qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYoRE4vWYOl9GAnjV-b_ymr83zC-uq89A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92090465802-fccu0inp66lj35jmrj1itabb4lhv96qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
