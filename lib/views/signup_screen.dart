@@ -1,5 +1,4 @@
 import 'package:authentication_app/controllers/auth_controller.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +28,10 @@ class SignUpScreen extends StatelessWidget {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30)),
                 ),
+
+
+
+
               ),
               const SizedBox(
                 height: 12,
@@ -45,6 +48,16 @@ class SignUpScreen extends StatelessWidget {
                 height: 20,
               ),
               OutlinedButton(onPressed: () {
+
+                // Validate returns true if the form is valid, or false otherwise.
+                if (_loginController.userFormKey.currentState!.validate()) {
+                  // If the form is valid, display a snackbar. In the real world,
+                  // you'd often call a server or save the information in a database.
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Processing Data...')),
+                  );
+                }
+
                 AuthController.instance.register(_loginController.userMailController.text.trim(),
                     _loginController.userPasswordController.text.trim());
               }, child: const Text('Sign Up')),
